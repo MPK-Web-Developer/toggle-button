@@ -1,0 +1,70 @@
+.cycle-type-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+.cycle-type-container .cycle-type-title h2 {
+	font-size: 36px;
+}
+
+.cycle-type-check-box *,
+.cycle-type-check-box::before,
+.cycle-type-check-box::after {
+	transition: 400ms all ease-in-out 50ms;
+}
+
+.cycle-type-check-box input[type="checkbox"] {
+	display: none;
+}
+
+.cycle-type-check-box input[type="checkbox"]:checked ~ div {
+	box-shadow: 0 0 2px rgb(194, 194, 194);
+}
+
+.cycle-type-check-box input[type="checkbox"]:checked ~ div label {
+	left: 110px;
+	transform: rotate(360deg);
+	background: url("https://cdn.shopify.com/s/files/1/0731/5646/0844/files/steed-chainless-shaft-drive-icon.svg?v=1685686109");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.cycle-type-check-box div,
+label {
+	border-radius: 50px;
+}
+
+.cycle-type-check-box div {
+	height: 100px;
+	width: 200px;
+	background: #1e1e1e;
+	position: relative;
+	// top: calc(50vh - 50px);
+	// left: calc(50vw - 100px);
+	box-shadow: 0 0 2px rgba(43, 43, 43, 1);
+}
+
+.cycle-type-check-box label {
+	height: 80px;
+	width: 80px;
+	background: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	background: url("https://cdn.shopify.com/s/files/1/0731/5646/0844/files/steed-chainless-shaft-drive-icon.svg?v=1685686109")
+		#fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60px 60px;
+}
+
+.cycle-type-check-box input[type="checkbox"]:checked ~ div label {
+	background: url("https://cdn.shopify.com/s/files/1/0731/5646/0844/files/steed-drive-belt.svg?v=1685538758")
+		#fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60px 60px;
+}
