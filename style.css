@@ -68,3 +68,24 @@ label {
 	background-position: center center;
 	background-size: 60px 60px;
 }
+
+.advantage-container {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+}
+
+.cycle-type-hidden {
+	display: none;
+}
+
+.advantages-shaft-drive {
+	width: 100px;
+	height: 100px;
+	background-color: #0f0;
+}
+.advantages-belt-drive {
+	width: 100px;
+	height: 100px;
+	background-color: #f00;
+}
